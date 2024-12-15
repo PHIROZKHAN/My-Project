@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="SelectMenu_Test(failed)">
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="test.SelectMenu_Test">
+        <methods>
+          <include name="clickAtSelectTitle"/>
+          <include name="clickAtSelectMenu"/>
+          <include name="clickAtWigets"/>
+          <include name="clickAtSelectValue"/>
+        </methods>
+      </class> <!-- test.SelectMenu_Test -->
+    </classes>
+  </test> <!-- SelectMenu_Test(failed) -->
+  <test thread-count="5" name="Menu_Test(failed)">
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="test.Menu_Test">
+        <methods>
+          <include name="clickAtMenu"/>
+          <include name="clickAtJavaScript"/>
+          <include name="clickAtClose"/>
+          <include name="clickAtBlog"/>
+          <include name="clickAtPractice"/>
+          <include name="clickAtWigets"/>
+          <include name="clickAtSelectMenue"/>
+        </methods>
+      </class> <!-- test.Menu_Test -->
+    </classes>
+  </test> <!-- Menu_Test(failed) -->
+  <test thread-count="5" name="ToolTipTest(failed)">
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="test.ToolTipTest">
+        <methods>
+          <include name="clickAtClose"/>
+          <include name="clickAtToolTip"/>
+          <include name="clickAtToolTip1"/>
+          <include name="clickAtWigets"/>
+          <include name="clickAtToolTip2"/>
+          <include name="clickAtPractice"/>
+        </methods>
+      </class> <!-- test.ToolTipTest -->
+    </classes>
+  </test> <!-- ToolTipTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

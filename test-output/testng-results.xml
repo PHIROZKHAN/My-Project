@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-12-14T15:25:21 IST" name="Default suite" finished-at="2024-12-14T15:25:34 IST" duration-ms="12887">
+    <groups>
+      <group name="smoke">
+        <method signature="ProgressBarTest.ProgressBar()[pri:6, instance:test.ProgressBarTest@4f18837a]" name="ProgressBar" class="test.ProgressBarTest"/>
+        <method signature="ProgressBarTest.clickAtClose()[pri:1, instance:test.ProgressBarTest@4f18837a]" name="clickAtClose" class="test.ProgressBarTest"/>
+        <method signature="ProgressBarTest.clickAtPractice()[pri:2, instance:test.ProgressBarTest@4f18837a]" name="clickAtPractice" class="test.ProgressBarTest"/>
+        <method signature="ProgressBarTest.clickAtProgressBar()[pri:4, instance:test.ProgressBarTest@4f18837a]" name="clickAtProgressBar" class="test.ProgressBarTest"/>
+        <method signature="ProgressBarTest.clickAtStrtBtn()[pri:5, instance:test.ProgressBarTest@4f18837a]" name="clickAtStrtBtn" class="test.ProgressBarTest"/>
+        <method signature="ProgressBarTest.clickAtWigets()[pri:3, instance:test.ProgressBarTest@4f18837a]" name="clickAtWigets" class="test.ProgressBarTest"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2024-12-14T15:25:21 IST" name="Default test" finished-at="2024-12-14T15:25:34 IST" duration-ms="12887">
+      <class name="test.ProgressBarTest">
+        <test-method is-config="true" signature="launcher()[pri:0, instance:test.ProgressBarTest@4f18837a]" started-at="2024-12-14T15:25:21 IST" name="launcher" finished-at="2024-12-14T15:25:29 IST" duration-ms="7782" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launcher -->
+        <test-method signature="clickAtClose()[pri:1, instance:test.ProgressBarTest@4f18837a]" started-at="2024-12-14T15:25:29 IST" name="clickAtClose" finished-at="2024-12-14T15:25:29 IST" duration-ms="257" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickAtClose -->
+        <test-method is-config="true" signature="resultAnalysis(org.testng.ITestResult)[pri:0, instance:test.ProgressBarTest@4f18837a]" started-at="2024-12-14T15:25:29 IST" name="resultAnalysis" finished-at="2024-12-14T15:25:30 IST" duration-ms="1136" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickAtClose status=SUCCESS method=ProgressBarTest.clickAtClose()[pri:1, instance:test.ProgressBarTest@4f18837a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resultAnalysis -->
+        <test-method signature="clickAtPractice()[pri:2, instance:test.ProgressBarTest@4f18837a]" started-at="2024-12-14T15:25:30 IST" name="clickAtPractice" finished-at="2024-12-14T15:25:32 IST" duration-ms="1846" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickAtPractice -->
+        <test-method is-config="true" signature="resultAnalysis(org.testng.ITestResult)[pri:0, instance:test.ProgressBarTest@4f18837a]" started-at="2024-12-14T15:25:32 IST" name="resultAnalysis" finished-at="2024-12-14T15:25:32 IST" duration-ms="191" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickAtPractice status=SUCCESS method=ProgressBarTest.clickAtPractice()[pri:2, instance:test.ProgressBarTest@4f18837a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resultAnalysis -->
+        <test-method signature="clickAtWigets()[pri:3, instance:test.ProgressBarTest@4f18837a]" started-at="2024-12-14T15:25:32 IST" name="clickAtWigets" finished-at="2024-12-14T15:25:32 IST" duration-ms="187" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickAtWigets -->
+        <test-method is-config="true" signature="resultAnalysis(org.testng.ITestResult)[pri:0, instance:test.ProgressBarTest@4f18837a]" started-at="2024-12-14T15:25:32 IST" name="resultAnalysis" finished-at="2024-12-14T15:25:33 IST" duration-ms="298" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickAtWigets status=SUCCESS method=ProgressBarTest.clickAtWigets()[pri:3, instance:test.ProgressBarTest@4f18837a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resultAnalysis -->
+        <test-method signature="clickAtProgressBar()[pri:4, instance:test.ProgressBarTest@4f18837a]" started-at="2024-12-14T15:25:33 IST" name="clickAtProgressBar" finished-at="2024-12-14T15:25:33 IST" duration-ms="251" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickAtProgressBar -->
+        <test-method is-config="true" signature="resultAnalysis(org.testng.ITestResult)[pri:0, instance:test.ProgressBarTest@4f18837a]" started-at="2024-12-14T15:25:33 IST" name="resultAnalysis" finished-at="2024-12-14T15:25:33 IST" duration-ms="224" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickAtProgressBar status=SUCCESS method=ProgressBarTest.clickAtProgressBar()[pri:4, instance:test.ProgressBarTest@4f18837a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resultAnalysis -->
+        <test-method signature="clickAtStrtBtn()[pri:5, instance:test.ProgressBarTest@4f18837a]" started-at="2024-12-14T15:25:33 IST" name="clickAtStrtBtn" finished-at="2024-12-14T15:25:33 IST" duration-ms="151" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickAtStrtBtn -->
+        <test-method is-config="true" signature="resultAnalysis(org.testng.ITestResult)[pri:0, instance:test.ProgressBarTest@4f18837a]" started-at="2024-12-14T15:25:33 IST" name="resultAnalysis" finished-at="2024-12-14T15:25:34 IST" duration-ms="196" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickAtStrtBtn status=SUCCESS method=ProgressBarTest.clickAtStrtBtn()[pri:5, instance:test.ProgressBarTest@4f18837a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resultAnalysis -->
+        <test-method signature="ProgressBar()[pri:6, instance:test.ProgressBarTest@4f18837a]" started-at="2024-12-14T15:25:34 IST" name="ProgressBar" finished-at="2024-12-14T15:25:34 IST" duration-ms="53" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProgressBar -->
+        <test-method is-config="true" signature="resultAnalysis(org.testng.ITestResult)[pri:0, instance:test.ProgressBarTest@4f18837a]" started-at="2024-12-14T15:25:34 IST" name="resultAnalysis" finished-at="2024-12-14T15:25:34 IST" duration-ms="224" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ProgressBar status=SUCCESS method=ProgressBarTest.ProgressBar()[pri:6, instance:test.ProgressBarTest@4f18837a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resultAnalysis -->
+      </class> <!-- test.ProgressBarTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
