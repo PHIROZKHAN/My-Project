@@ -1,0 +1,117 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+
+<suite name="Suite">
+  <test  name="LoginTest" enabled="false">
+    <classes>
+      <class name="test.LoginTest"/>
+    </classes>
+  </test> <!-- Test -->
+ 
+  <test  name="TextBoxTest" enabled="false">
+    <classes>
+       <class name="test.TextBoxTest"/>
+    </classes>
+  </test> <!-- Test -->
+ 
+  <test  name="CheckBoxTest" enabled="false">
+    <classes>
+      <class name="test.CheckBoxTest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test  name="RadioButtonsTest" enabled="false">
+    <classes>
+      <class name="test.RadioButtonsTest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name= " WebTableTest " enabled="false">
+	  <classes>
+		  <class name="test.WebTableTest"/>
+	  </classes>
+  </test>
+
+   <test name="LinksTest" enabled="false">
+	  <classes>
+		  <class name="test.LinksTest"/>
+	  </classes>
+  </test>
+  <test name="ButtonsTest" enabled="false">
+	  <classes>
+		  <class name="test.ButtonsTest"/>
+	  </classes>
+  </test>
+  <test name="Upload_DownloadTest" enabled="false">
+	  <classes>
+		  <class name="test.Upload_DownloadTest"/>
+	  </classes>
+  </test>
+  <test name="Alerts_Test" enabled="false">
+	  <classes>
+		  <class name="test.Alerts_Test"/>
+	  </classes>
+  </test>
+  <test name="BrowserWindowTest" enabled="false">
+	  <classes>
+		  <class name="test.BrowserWindowTest"/>
+	  </classes>
+  </test>
+ 
+  <test name="ModalDialogsTest" enabled="false">
+	  <groups>
+		  <run>
+			  <include name="sanity"></include>
+		  </run>
+	  </groups>
+	  <classes>
+		  <class name="test.ModalDialogsTest"/>
+	  </classes>
+  </test>
+  
+  <test name="NestedFrameTest" enabled="false">
+	  <classes>
+		  <class name="test.NestedFrameTest"/>
+	  </classes>
+  </test>
+ 
+  <test name="SelectMenu_Test" enabled="true">
+	  <groups> 
+		  <run>
+			  <include name="smoke"></include>
+		  </run>
+	  </groups>
+	  <classes>
+		  <class name="test.SelectMenu_Test">
+		  </class>
+	  </classes>
+  </test>
+  
+  <test name="Menu_Test" enabled="true">
+	  <groups>
+	  <run>
+		  <include name="smoke"></include>
+	  </run>
+  </groups>
+	  <classes>
+		  <class name="test.Menu_Test">	  
+		  </class>
+	  </classes>
+  </test>
+  
+  <test name="ToolTipTest" enabled="true">
+	  <groups>
+		  <run>
+			  <include name="smoke">
+				  
+			  </include>
+		  </run>
+	  </groups>
+	  <classes>
+		  <class name="test.ToolTipTest">
+			  
+		  </class>
+	  </classes>
+  </test>
+  
+  
+  </suite> <!-- Suite -->
+  
