@@ -52,9 +52,10 @@ public class TabsPage extends BaseLibrary {
 	public void clickOnTab1()
 	{
 		waitforClick(tab1);
-//		String expectedtab1="";
-//		String actual=tab1.getText();
+  	String expectedtab1="The precise nature of your messages matter.";
+		String actual=tab1.getText();
 //		Assert.assertEquals(expectedtab1, actual);
+		actual.contains(expectedtab1);
 	}
 	public void clickOnTab2()
 	{

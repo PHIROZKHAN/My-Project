@@ -50,15 +50,16 @@ public class BrowserWindowPage extends BaseLibrary {
 	public void clickOnNewTab() {
 		waitforClick(new_tab);
 		windowHandle(0);
+		
 		}
 	public void clickOnNewWindow()
 	{
 		waitforClick(newwindow);
-		
+		windowHandle(0);
 	}
 	public void clickOnNewWindowMsg()
 	{
 		waitforClick(newwindowmsg);
 	}
 	
-	}
+}

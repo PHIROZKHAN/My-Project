@@ -54,6 +54,7 @@ public class BrowserWindowTest  extends BaseLibrary{
 	public void clickAtNewWindowMsg()
 	{
 		ob.clickOnNewWindowMsg();
+		driver.close();
 	}
 	
 

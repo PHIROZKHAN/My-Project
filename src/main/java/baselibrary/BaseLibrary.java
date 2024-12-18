@@ -8,6 +8,8 @@ import java.awt.event.KeyEvent;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -221,7 +223,7 @@ public  class BaseLibrary implements ExcelUtility, PropertyUtility, ApplicationU
 			rb.delay(400);
 			rb.keyRelease(KeyEvent.VK_ENTER);
 			
-		} catch (AWTException e) {
+		} catch (Exception e) {
 			
 			System.out.println("issue in upload file ....");
 			e.printStackTrace();
@@ -327,6 +329,34 @@ public String getDate_time() {
 		
 		//act.clickAndHold(slider).moveByOffset(100, 0).release().build().perform();
 
+	}
+	
+//<------------------get the HTTP response code for a given URL--------------------->
+	@Override
+	public void getResponseCodeForRequest(String url) {
+		
+		try {
+			// Convert the URL string to a URL object
+			URL curl= new URL(url);
+			 
+			HttpURLConnection huc=(HttpURLConnection) curl.openConnection();
+			huc.setRequestMethod("GET");
+			// Establish the connection to the remote server
+			huc.connect();
+			
+			int  responsecode=huc.getResponseCode();
+			if(responsecode==200)
+			{
+				System.out.println("test pass link is ok");
+			}
+			else
+			{
+				System.out.println("test fail link is broken");
+			}
+		} catch (Exception e) {
+
+				System.out.println("issue in getResponseCodeForRequest");
+		}	
 	}	
 }
 	

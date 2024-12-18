@@ -17,5 +17,6 @@ public interface ApplicationUtility
 	public void selectbyvalue(WebElement ele, String value);
 	public void movetoElement(WebElement ele); 
 	public void dragAndDrop(WebElement ele, int x,int y);
+	public void getResponseCodeForRequest(String url);
 	
    }

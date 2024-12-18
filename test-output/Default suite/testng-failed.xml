@@ -3,13 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.ProgressBarTest">
+      <class name="test.BrokenImageTest">
         <methods>
+          <include name="clickAtClose"/>
+          <include name="clickAtElement"/>
+          <include name="clickAtBrokenImage"/>
           <include name="resultAnalysis"/>
-          <include name="ProgressBar"/>
           <include name="launcher"/>
+          <include name="clickAtPractice"/>
         </methods>
-      </class> <!-- test.ProgressBarTest -->
+      </class> <!-- test.BrokenImageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
