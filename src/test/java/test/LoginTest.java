@@ -4,6 +4,7 @@
 import org.testng.annotations.Test;
 import org.junit.Assert;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import baselibrary.BaseLibrary;
@@ -13,13 +14,14 @@ public class LoginTest extends BaseLibrary {
 	
 	LoginPage ob;
 
+	@Parameters("Browser1")
 	@BeforeTest
-	public void launcher()
-	{ 
-		launchUrl("chrome");
-		ob= new LoginPage();
-		
+	public void launcher(String Browser) { 
+	    
+	    launchUrl(Browser); // Dynamically pass the browser parameter
+	    ob = new LoginPage(); // Ensure this initialization does not fail
 	}
+
 	@Test
 	public void clickonclose()
 	{

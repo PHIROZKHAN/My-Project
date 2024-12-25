@@ -1,6 +1,7 @@
 package test;
 
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import baselibrary.BaseLibrary;
@@ -11,9 +12,10 @@ public class Upload_DownloadTest extends BaseLibrary {
 
 	Upload_DownloadPage ob;
 	@BeforeTest
-	public void launcher()
+	@Parameters("Browser1")
+	public void launcher(String br)
 	{
-		launchUrl("chrome");
+		launchUrl(br);
 		 ob = new Upload_DownloadPage();
 	}
 	@Test(priority=1)

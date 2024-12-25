@@ -55,8 +55,8 @@ public class DatePickerPage extends BaseLibrary {
 	public void clickOnDateTime()
 	{
 		datetime.clear();
-		datetime.sendKeys("13-05-2024T15:30:13");
-//		"2013-04-02T14:58:33Z"
+		datetime.sendKeys("20-12-2024T20:06Z");
+//		"2013-04-02T14:58:33Z"  2024-12-17T20:06:39.997Z
 	}
 
 }

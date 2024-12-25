@@ -1,6 +1,7 @@
 package test;
 
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import baselibrary.BaseLibrary;
@@ -9,10 +10,11 @@ import pages.NestedFramePage;
 
 public class ModalDialogsTest extends BaseLibrary {
 	ModalDialogsPage ob;
+	@Parameters("Browser1")
 	@BeforeTest(groups= {"sanity","smoke","regression"})
-	public void launcher()
+	public void launcher(String browser)
 	{
-		launchUrl("chrome");
+		launchUrl(browser);
 		ob = new ModalDialogsPage();
 	}
 
@@ -22,12 +24,12 @@ public class ModalDialogsTest extends BaseLibrary {
 	{
 		ob.clickOnClose();
 	}
-	@Test( priority=2,groups= {"sanity","regression"} ,enabled=true)
+	@Test( priority=2,groups= {"sanity","regression","smoke"} ,enabled=true)
 	public void clickAtPractice()
 	{
 		ob.clickOnPractice();
 	}
-	@Test(priority=3,groups= {"sanity","regression"},alwaysRun=true)
+	@Test(priority=3,groups= {"sanity","regression","smoke"},alwaysRun=true)
 	public void clickAtAlertFrameWindow()
 	{
 		ob.clickOnAlertFrameWindow();
@@ -37,7 +39,7 @@ public class ModalDialogsTest extends BaseLibrary {
 	{
 		ob.clickOnModalDialogs();
 	}
-	@Test(priority=5,groups= {"smoke","sanity"})
+	@Test(priority=5,groups= {"smoke","sanity","smoke"})
 	public void clickAtOnSmallModal()
 	{
 		ob.cllickOnSmallModal();

@@ -1,6 +1,7 @@
 package test;
 
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import baselibrary.BaseLibrary;
@@ -9,10 +10,11 @@ import pages.Links_Page;
 public class LinksTest extends BaseLibrary {
 	
 	Links_Page ob;
+	@Parameters("Browser1")
 	@BeforeTest
-	public void launcher()
+	public void launcher(String browser)
 	{
-		launchUrl("chrome");
+		launchUrl(browser);
 		 ob = new Links_Page();
 	}
 	@Test(priority=1)

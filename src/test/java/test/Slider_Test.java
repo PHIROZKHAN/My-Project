@@ -1,6 +1,7 @@
 package test;
 
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import baselibrary.BaseLibrary;
@@ -11,10 +12,11 @@ public class Slider_Test extends BaseLibrary {
 	
 	Slider_Page ob;
 	
-	@BeforeTest
-	public void launcher()
+	@BeforeTest(groups= {"smoke"})
+	@Parameters("Browser1")
+	public void launcher(String browser)
 	{
-		launchUrl("chrome");
+		launchUrl(browser);
 		ob= new Slider_Page();
 	}
 	@Test(priority=1,groups= {"smoke"},enabled=true)

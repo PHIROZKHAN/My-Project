@@ -3,16 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.BrokenImageTest">
+      <class name="test.SelectableTest">
         <methods>
-          <include name="clickAtClose"/>
-          <include name="clickAtElement"/>
-          <include name="clickAtBrokenImage"/>
-          <include name="resultAnalysis"/>
+          <include name="clickAtSelectableGrid"/>
+          <include name="clickAtSelectableGridItem"/>
           <include name="launcher"/>
           <include name="clickAtPractice"/>
+          <include name="clickAtSelectableList"/>
+          <include name="clickAtInteractions"/>
+          <include name="clickAtSelectable"/>
+          <include name="clickAtSelectableListItem"/>
+          <include name="clickAtClose"/>
         </methods>
-      </class> <!-- test.BrokenImageTest -->
+      </class> <!-- test.SelectableTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

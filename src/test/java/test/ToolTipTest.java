@@ -1,6 +1,7 @@
 package test;
 
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import baselibrary.BaseLibrary;
@@ -10,10 +11,11 @@ import pages.ToolTipPage;
 public class ToolTipTest extends BaseLibrary {
 	ToolTipPage ob;
 	
-	@BeforeTest
-	public void launcher()
+	@BeforeTest(groups= {"smoke"})
+	@Parameters("Browser1")
+	public void launcher(String br)
 	{
-		launchUrl("chrome");
+		launchUrl(br);
 		ob= new ToolTipPage();
 	}
 	@Test(priority=1,groups= {"smoke"},enabled=true)

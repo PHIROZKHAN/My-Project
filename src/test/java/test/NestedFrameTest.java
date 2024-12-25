@@ -2,6 +2,7 @@ package test;
 
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import baselibrary.BaseLibrary;
@@ -11,9 +12,10 @@ public class NestedFrameTest extends BaseLibrary{
 	
 	NestedFramePage ob;
 	@BeforeTest(groups= {"sanity","smoke","regression"})
-	public void launcher()
+	@Parameters("Browser1")
+	public void launcher(String br)
 	{
-		launchUrl("chrome");
+		launchUrl(br);
 		ob = new NestedFramePage();
 	}
 	@Test( priority=1)

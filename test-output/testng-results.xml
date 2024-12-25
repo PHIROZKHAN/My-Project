@@ -1,131 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-18T20:18:24 IST" name="Default suite" finished-at="2024-12-18T20:18:36 IST" duration-ms="12860">
+  <suite started-at="2024-12-25T16:19:56 IST" name="Suite" finished-at="2024-12-25T16:20:09 IST" duration-ms="13444">
     <groups>
       <group name="smoke">
-        <method signature="TabsTest.clickAtClose()[pri:1, instance:test.TabsTest@1fa268de]" name="clickAtClose" class="test.TabsTest"/>
-        <method signature="TabsTest.clickAtPractice()[pri:2, instance:test.TabsTest@1fa268de]" name="clickAtPractice" class="test.TabsTest"/>
-        <method signature="TabsTest.clickAtTab()[pri:4, instance:test.TabsTest@1fa268de]" name="clickAtTab" class="test.TabsTest"/>
-        <method signature="TabsTest.clickAtTab1()[pri:5, instance:test.TabsTest@1fa268de]" name="clickAtTab1" class="test.TabsTest"/>
-        <method signature="TabsTest.clickAtTab2()[pri:6, instance:test.TabsTest@1fa268de]" name="clickAtTab2" class="test.TabsTest"/>
-        <method signature="TabsTest.clickAtTab3()[pri:7, instance:test.TabsTest@1fa268de]" name="clickAtTab3" class="test.TabsTest"/>
-        <method signature="TabsTest.clickAtWigets()[pri:3, instance:test.TabsTest@1fa268de]" name="clickAtWigets" class="test.TabsTest"/>
+        <method signature="SelectableTest.clickAtClose()[pri:1, instance:test.SelectableTest@72d1ad2e]" name="clickAtClose" class="test.SelectableTest"/>
+        <method signature="SelectableTest.clickAtInteractions()[pri:3, instance:test.SelectableTest@72d1ad2e]" name="clickAtInteractions" class="test.SelectableTest"/>
+        <method signature="SelectableTest.clickAtPractice()[pri:2, instance:test.SelectableTest@72d1ad2e]" name="clickAtPractice" class="test.SelectableTest"/>
+        <method signature="SelectableTest.clickAtSelectable()[pri:4, instance:test.SelectableTest@72d1ad2e]" name="clickAtSelectable" class="test.SelectableTest"/>
+        <method signature="SelectableTest.clickAtSelectableGrid()[pri:7, instance:test.SelectableTest@72d1ad2e]" name="clickAtSelectableGrid" class="test.SelectableTest"/>
+        <method signature="SelectableTest.clickAtSelectableGridItem()[pri:8, instance:test.SelectableTest@72d1ad2e]" name="clickAtSelectableGridItem" class="test.SelectableTest"/>
+        <method signature="SelectableTest.clickAtSelectableList()[pri:5, instance:test.SelectableTest@72d1ad2e]" name="clickAtSelectableList" class="test.SelectableTest"/>
+        <method signature="SelectableTest.clickAtSelectableListItem()[pri:6, instance:test.SelectableTest@72d1ad2e]" name="clickAtSelectableListItem" class="test.SelectableTest"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2024-12-18T20:18:24 IST" name="Default test" finished-at="2024-12-18T20:18:36 IST" duration-ms="12860">
-      <class name="test.TabsTest">
-        <test-method is-config="true" signature="launcher()[pri:0, instance:test.TabsTest@1fa268de]" started-at="2024-12-18T20:18:24 IST" name="launcher" finished-at="2024-12-18T20:18:31 IST" duration-ms="6965" status="PASS">
+    <test started-at="2024-12-25T16:19:56 IST" name="SelectableTest" finished-at="2024-12-25T16:20:09 IST" duration-ms="13444">
+      <class name="test.SelectableTest">
+        <test-method is-config="true" signature="launcher(java.lang.String)[pri:0, instance:test.SelectableTest@72d1ad2e]" started-at="2024-12-25T16:19:56 IST" name="launcher" finished-at="2024-12-25T16:20:04 IST" duration-ms="8051" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launcher -->
-        <test-method signature="clickAtClose()[pri:1, instance:test.TabsTest@1fa268de]" started-at="2024-12-18T20:18:31 IST" name="clickAtClose" finished-at="2024-12-18T20:18:31 IST" duration-ms="525" status="PASS">
+        <test-method signature="clickAtClose()[pri:1, instance:test.SelectableTest@72d1ad2e]" started-at="2024-12-25T16:20:04 IST" name="clickAtClose" finished-at="2024-12-25T16:20:04 IST" duration-ms="707" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickAtClose -->
-        <test-method is-config="true" signature="resultAnalysis(org.testng.ITestResult)[pri:0, instance:test.TabsTest@1fa268de]" started-at="2024-12-18T20:18:31 IST" name="resultAnalysis" finished-at="2024-12-18T20:18:32 IST" duration-ms="950" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=clickAtClose status=SUCCESS method=TabsTest.clickAtClose()[pri:1, instance:test.TabsTest@1fa268de] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- resultAnalysis -->
-        <test-method signature="clickAtPractice()[pri:2, instance:test.TabsTest@1fa268de]" started-at="2024-12-18T20:18:32 IST" name="clickAtPractice" finished-at="2024-12-18T20:18:34 IST" duration-ms="1931" status="PASS">
+        <test-method signature="clickAtPractice()[pri:2, instance:test.SelectableTest@72d1ad2e]" started-at="2024-12-25T16:20:04 IST" name="clickAtPractice" finished-at="2024-12-25T16:20:07 IST" duration-ms="2432" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickAtPractice -->
-        <test-method is-config="true" signature="resultAnalysis(org.testng.ITestResult)[pri:0, instance:test.TabsTest@1fa268de]" started-at="2024-12-18T20:18:34 IST" name="resultAnalysis" finished-at="2024-12-18T20:18:34 IST" duration-ms="181" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=clickAtPractice status=SUCCESS method=TabsTest.clickAtPractice()[pri:2, instance:test.TabsTest@1fa268de] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="clickAtInteractions()[pri:3, instance:test.SelectableTest@72d1ad2e]" started-at="2024-12-25T16:20:07 IST" name="clickAtInteractions" finished-at="2024-12-25T16:20:07 IST" duration-ms="320" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- resultAnalysis -->
-        <test-method signature="clickAtWigets()[pri:3, instance:test.TabsTest@1fa268de]" started-at="2024-12-18T20:18:34 IST" name="clickAtWigets" finished-at="2024-12-18T20:18:34 IST" duration-ms="157" status="PASS">
+        </test-method> <!-- clickAtInteractions -->
+        <test-method signature="clickAtSelectable()[pri:4, instance:test.SelectableTest@72d1ad2e]" started-at="2024-12-25T16:20:07 IST" name="clickAtSelectable" finished-at="2024-12-25T16:20:08 IST" duration-ms="501" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickAtWigets -->
-        <test-method is-config="true" signature="resultAnalysis(org.testng.ITestResult)[pri:0, instance:test.TabsTest@1fa268de]" started-at="2024-12-18T20:18:34 IST" name="resultAnalysis" finished-at="2024-12-18T20:18:35 IST" duration-ms="277" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=clickAtWigets status=SUCCESS method=TabsTest.clickAtWigets()[pri:3, instance:test.TabsTest@1fa268de] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- clickAtSelectable -->
+        <test-method signature="clickAtSelectableList()[pri:5, instance:test.SelectableTest@72d1ad2e]" started-at="2024-12-25T16:20:08 IST" name="clickAtSelectableList" finished-at="2024-12-25T16:20:08 IST" duration-ms="273" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- resultAnalysis -->
-        <test-method signature="clickAtTab()[pri:4, instance:test.TabsTest@1fa268de]" started-at="2024-12-18T20:18:35 IST" name="clickAtTab" finished-at="2024-12-18T20:18:35 IST" duration-ms="212" status="PASS">
+        </test-method> <!-- clickAtSelectableList -->
+        <test-method signature="clickAtSelectableListItem()[pri:6, instance:test.SelectableTest@72d1ad2e]" started-at="2024-12-25T16:20:08 IST" name="clickAtSelectableListItem" finished-at="2024-12-25T16:20:08 IST" duration-ms="337" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickAtTab -->
-        <test-method is-config="true" signature="resultAnalysis(org.testng.ITestResult)[pri:0, instance:test.TabsTest@1fa268de]" started-at="2024-12-18T20:18:35 IST" name="resultAnalysis" finished-at="2024-12-18T20:18:35 IST" duration-ms="225" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=clickAtTab status=SUCCESS method=TabsTest.clickAtTab()[pri:4, instance:test.TabsTest@1fa268de] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- clickAtSelectableListItem -->
+        <test-method signature="clickAtSelectableGrid()[pri:7, instance:test.SelectableTest@72d1ad2e]" started-at="2024-12-25T16:20:08 IST" name="clickAtSelectableGrid" finished-at="2024-12-25T16:20:09 IST" duration-ms="258" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- resultAnalysis -->
-        <test-method signature="clickAtTab1()[pri:5, instance:test.TabsTest@1fa268de]" started-at="2024-12-18T20:18:35 IST" name="clickAtTab1" finished-at="2024-12-18T20:18:35 IST" duration-ms="191" status="PASS">
+        </test-method> <!-- clickAtSelectableGrid -->
+        <test-method signature="clickAtSelectableGridItem()[pri:8, instance:test.SelectableTest@72d1ad2e]" started-at="2024-12-25T16:20:09 IST" name="clickAtSelectableGridItem" finished-at="2024-12-25T16:20:09 IST" duration-ms="373" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickAtTab1 -->
-        <test-method is-config="true" signature="resultAnalysis(org.testng.ITestResult)[pri:0, instance:test.TabsTest@1fa268de]" started-at="2024-12-18T20:18:35 IST" name="resultAnalysis" finished-at="2024-12-18T20:18:35 IST" duration-ms="124" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=clickAtTab1 status=SUCCESS method=TabsTest.clickAtTab1()[pri:5, instance:test.TabsTest@1fa268de] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- resultAnalysis -->
-        <test-method signature="clickAtTab2()[pri:6, instance:test.TabsTest@1fa268de]" started-at="2024-12-18T20:18:35 IST" name="clickAtTab2" finished-at="2024-12-18T20:18:36 IST" duration-ms="151" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickAtTab2 -->
-        <test-method is-config="true" signature="resultAnalysis(org.testng.ITestResult)[pri:0, instance:test.TabsTest@1fa268de]" started-at="2024-12-18T20:18:36 IST" name="resultAnalysis" finished-at="2024-12-18T20:18:36 IST" duration-ms="292" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=clickAtTab2 status=SUCCESS method=TabsTest.clickAtTab2()[pri:6, instance:test.TabsTest@1fa268de] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- resultAnalysis -->
-        <test-method signature="clickAtTab3()[pri:7, instance:test.TabsTest@1fa268de]" started-at="2024-12-18T20:18:36 IST" name="clickAtTab3" finished-at="2024-12-18T20:18:36 IST" duration-ms="270" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickAtTab3 -->
-        <test-method is-config="true" signature="resultAnalysis(org.testng.ITestResult)[pri:0, instance:test.TabsTest@1fa268de]" started-at="2024-12-18T20:18:36 IST" name="resultAnalysis" finished-at="2024-12-18T20:18:36 IST" duration-ms="254" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=clickAtTab3 status=SUCCESS method=TabsTest.clickAtTab3()[pri:7, instance:test.TabsTest@1fa268de] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- resultAnalysis -->
-      </class> <!-- test.TabsTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- clickAtSelectableGridItem -->
+      </class> <!-- test.SelectableTest -->
+    </test> <!-- SelectableTest -->
+  </suite> <!-- Suite -->
 </testng-results>

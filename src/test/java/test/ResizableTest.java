@@ -1,6 +1,7 @@
 package test;
 
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import baselibrary.BaseLibrary;
@@ -11,10 +12,11 @@ public class ResizableTest extends BaseLibrary{
 	
 	ResizablePage ob;
 	
-	@BeforeTest
-	public void launcher()
+	@BeforeTest(groups= {"smoke"})
+	@Parameters("Browser1")
+	public void launcher(String br)
 	{
-		launchUrl("chrome");
+		launchUrl(br);
 		ob= new ResizablePage();
 	}
 	@Test(priority=1,groups= {"smoke"},enabled=true)
@@ -25,7 +27,9 @@ public class ResizableTest extends BaseLibrary{
 	@Test(priority=2,groups= {"smoke"},enabled=true)
 	public void clickAtPractice()
 	{
+	
 		ob.clickOnPractice();
+		
 	}
 
 	@Test(priority=3,groups= {"smoke"},enabled=true)
@@ -43,5 +47,6 @@ public class ResizableTest extends BaseLibrary{
 	public void ResizeBox()
 	{
 		ob.Resizebox();
+		
 	}
 }

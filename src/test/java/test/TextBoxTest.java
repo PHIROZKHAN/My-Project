@@ -2,6 +2,7 @@ package test;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import baselibrary.BaseLibrary;
@@ -10,10 +11,11 @@ import pages.TextBoxPage;
 public class TextBoxTest extends BaseLibrary {
 	
 	TextBoxPage ob ;
+	@Parameters("Browser1")
 	@BeforeTest
-	public void launcher()
+	public void launcher(String brow)
 	{
-		launchUrl("chrome");
+		launchUrl(brow);
 		ob = new TextBoxPage();
 	}
 	

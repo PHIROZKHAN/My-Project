@@ -19,4 +19,5 @@ public interface ApplicationUtility
 	public void dragAndDrop(WebElement ele, int x,int y);
 	public void getResponseCodeForRequest(String url);
 	
+	
    }

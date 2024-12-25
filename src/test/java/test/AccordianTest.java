@@ -1,6 +1,7 @@
 package test;
 
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import baselibrary.BaseLibrary;
@@ -9,11 +10,11 @@ import pages.AccordianPage;
 public class AccordianTest extends BaseLibrary {
 	
 	AccordianPage ob;
-	
-	@BeforeTest
-	public void launcher()
+	@Parameters("Browser1")
+	@BeforeTest(groups= {"smoke"})
+	public void launcher(String browser1)
 	{
-		launchUrl("chrome");
+		launchUrl(browser1);
 		
 		ob= new AccordianPage();
 		

@@ -1,7 +1,10 @@
 package test;
 
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+
+
 
 import baselibrary.BaseLibrary;
 import pages.SelectMenu_Page;
@@ -9,21 +12,20 @@ import pages.SelectMenu_Page;
 public class SelectMenu_Test extends BaseLibrary {
 	
 	SelectMenu_Page ob;
-	
-	@BeforeTest
-	public void launcher()
-
+	@Parameters("Browser1")
+	@BeforeTest (groups={"smoke","Regression"})
+	public void launcher(String browser)
 	{
-		launchUrl("chrome");
+		launchUrl(browser);
 		ob = new SelectMenu_Page();
 	}
 	
-	@Test(priority=1,groups={"smokeTest","Regression"},enabled=true)
+	@Test(priority=1,groups={"smoke","Regression"},enabled=true)
 	public void clickAtClose()
 	{
 		ob.clickOnClose();
 	}
-	@Test(priority=2,groups= {"smaoke","regression"},enabled=true)
+	@Test(priority=2,groups= {"smoke","regression"},enabled=true)
 	public void clickAtPractice()
 	{
 		ob.clickOnPractice();

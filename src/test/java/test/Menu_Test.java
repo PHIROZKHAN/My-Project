@@ -1,6 +1,7 @@
 package test;
 
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import baselibrary.BaseLibrary;
@@ -9,11 +10,11 @@ import pages.MenuPage;
 public class Menu_Test extends BaseLibrary {
 	
 	MenuPage ob;
-	
-	@BeforeTest
-	public void launcher()
+	@Parameters("Browser1")
+	@BeforeTest (groups= {"smoke","sanity","regression"})
+	public void launcher(String browser)
 	{
-		launchUrl("chrome");
+		launchUrl(browser);
 		ob= new MenuPage();
 	}
 	@Test(priority=1,groups= {"smoke"},enabled=true)

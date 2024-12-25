@@ -1,6 +1,7 @@
 package test;
 
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import baselibrary.BaseLibrary;
@@ -10,10 +11,11 @@ public class AutocompleteTest extends BaseLibrary {
 	
 	AutocompletePage ob;
 	
-	@BeforeTest
-	public void launcher()
+	@BeforeTest(groups= {"smoke"})
+	@Parameters("Browser1")
+	public void launcher(String browser1)
 	{
-		launchUrl("chrome");
+		launchUrl(browser1);
 		ob= new AutocompletePage();
 	}
 	@Test(priority=1,groups= {"smoke"},enabled=true)

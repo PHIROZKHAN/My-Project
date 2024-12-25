@@ -3,6 +3,7 @@ package test;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import baselibrary.BaseLibrary;
@@ -13,9 +14,10 @@ public class WebTableTest extends BaseLibrary {
 	WebTablesPage ob ;
 
 	@BeforeTest
-	public void launcher()
+	@Parameters("Browser1")
+	public void launcher(String browser)
 	{
-		launchUrl("chrome");
+		launchUrl(browser);
 		ob = new WebTablesPage();
 	}
 	@Test(priority=1)

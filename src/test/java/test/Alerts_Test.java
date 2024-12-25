@@ -1,6 +1,7 @@
 package test;
 
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import baselibrary.BaseLibrary;
@@ -9,11 +10,11 @@ import pages.Alerts_Page;
 public class Alerts_Test extends BaseLibrary {    
 	
 	Alerts_Page ob ;
-	   
+	   @Parameters("Browser1")
 	@BeforeTest
-	public void launcher()
+	public void launcher(String br)
 	{
-		launchUrl("chrome");
+		launchUrl(br);
 		ob= new Alerts_Page ();
 		}
 	@Test(priority=1)

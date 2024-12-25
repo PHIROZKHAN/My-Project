@@ -1,6 +1,7 @@
 package test;
 
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import baselibrary.BaseLibrary;
@@ -11,10 +12,11 @@ public class ProgressBarTest extends BaseLibrary {
 	
 	ProgressBarPage ob;
 	
-	@BeforeTest
-	public void launcher()
+	@BeforeTest(groups= {"smoke"})
+	@Parameters("Browser1")
+	public void launcher(String br)
 	{
-		launchUrl("chrome");
+		launchUrl(br);
 		ob= new ProgressBarPage();
 	}
 	@Test(priority=1,groups= {"smoke"},enabled=true)

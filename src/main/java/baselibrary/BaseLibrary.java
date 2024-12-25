@@ -35,6 +35,8 @@ import org.openqa.selenium.support.ui.*;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.DataProvider;
+
 import applicationUtility.ApplicationUtility;
 import excelUtility.ExcelUtility;
 import propertyUtility.PropertyUtility;
@@ -258,7 +260,7 @@ public  class BaseLibrary implements ExcelUtility, PropertyUtility, ApplicationU
 			    
 	}	    
 			
-@AfterMethod
+//@AfterMethod
 public void resultAnalysis(ITestResult result) {
 	try {
 		String  methodname=result.getMethod().getMethodName();
@@ -358,9 +360,16 @@ public String getDate_time() {
 				System.out.println("issue in getResponseCodeForRequest");
 		}	
 	}	
-}
+	@DataProvider(name="webtable")
+	public Object[][] fillWebTable()
+	{
+		Object[][] val=new Object[][] {{"abcd", "abc1@email.com"},{"bcde", "abc2@email.com"},{"abcf", "abc3@email.com"},{"abcg", "abc4@email.com"}};
+		
+		return val ;
+	}
+
 	
-	/*@AfterTest
+	//@AfterTest
 	public void flush()
 	{
 		try {
@@ -370,7 +379,7 @@ public String getDate_time() {
 		e.printStackTrace();
 	}
 		driver.close();
-	}*/
+	}
 	
-
+    }
 
